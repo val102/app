@@ -1,0 +1,10 @@
+applications:
+- name: sound1
+  buildpacks: 
+    - java_buildpack
+  disk_quota: 1G
+  instances: 1
+  memory: 1G
+  path: target/app-0.0.1-SNAPSHOT.jar
+  random-routes: true
+  stack: cflinuxfs3
